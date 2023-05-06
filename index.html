@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrezza Fernandes">
+    <meta name="description" contente="Projeto final desenvolvido para conclusão do curso da WoMakersCode">
+    <title>Zilda Arns</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="light-theme">
+  
+<header>
+  <nav>
+    <ul>
+    <a href="https://womakerscode.org/">
+    <img src="/imagem/womakerscode-icone.png" class="logo">
+    </a>
+    <li><a href="#zilda">Zilda Arns</a></li> 
+    <li><a href="#saude">Zilda e a Saúde Pública</a></li>
+    <li><a href="#pastoral">Zilda e a Pastoral da Criança</a></li>
+    <li><a href="#tecnologia">Zilda e a Tecnologia</a></li>
+    <li><a href="#saiba-mais">Saiba mais!</a></li>
+  </ul>
+  </nav>
+</header>
+
+<main>
+<h1>Zilda Arns</h1> 
+<p id="subtitulo">Mulheres in Tech</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="/imagem/Zilda_Arns 2.webp">
+      <div class="text">Zilda Arns</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="/imagem/Zilda_Arns 3.jpg">
+      <div class="text">Zilda e Lula</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="/imagem/Zilda_Arns 4.jpg">
+      <div class="text">Velório de Zilda</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  </script>
+
+<section class="maincontent">
+    <article> 
+        <h2 id="zilda">Zilda Arns</h2>
+        <p class="conteudo-descricao">Zilda Arns foi uma médica pediatra brasileira e fundadora da Pastoral da Criança. Ela nasceu em 1934, em Forquilhinha, Santa Catarina, Brasil, e faleceu em 2010, vítima de um terremoto no Haiti, onde estava realizando um trabalho humanitário.
+          <p>Zilda Arns dedicou sua vida ao cuidado e proteção das crianças e famílias em situação de vulnerabilidade. Ela criou a Pastoral da Criança em 1983, uma organização sem fins lucrativos ligada à Igreja Católica, que visa promover a saúde e o desenvolvimento infantil por meio de ações de conscientização, capacitação de voluntários e acompanhamento de famílias carentes.
+          </p>
+          <p>Seu trabalho na área da saúde infantil e na redução da mortalidade infantil foi reconhecido internacionalmente. Zilda Arns recebeu diversos prêmios e honrarias por sua atuação, incluindo o Prêmio Príncipe das Astúrias da Concórdia, em 2003.
+          </p>
+          
+          Zilda Arns deixou um legado significativo e inspirador para a promoção dos direitos e bem-estar das crianças no Brasil e no mundo.
+        </p><br>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/oDaRyT4XG9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+    </article>
+
+    <article> 
+        <h2 id="saude">Zilda e a Saúde Pública</h2>
+        <p class="conteudo-descricao">Zilda Arns teve um papel fundamental na área da saúde pública, especialmente no que diz respeito à saúde infantil e materna. Sua atuação na Pastoral da Criança teve um impacto significativo na promoção da saúde e no combate à mortalidade infantil no Brasil e em outros países.
+          <p>Uma das principais contribuições de Zilda Arns foi o desenvolvimento de um método de acompanhamento de crianças e gestantes chamado "Acompanhamento Nutricional e Desenvolvimento Infantil". Esse método é baseado em visitas regulares a famílias de baixa renda por parte de voluntários treinados, que monitoram o crescimento e o desenvolvimento das crianças, além de fornecer orientações sobre saúde e nutrição.
+          </p>
+          <p>A abordagem de Zilda Arns também valorizava a prevenção de doenças, a promoção de hábitos saudáveis e o envolvimento comunitário. Ela acreditava que a saúde pública não deveria se restringir apenas ao tratamento de doenças, mas também à promoção de condições adequadas de saúde e ao fortalecimento das comunidades.
+          </p>
+          <p>Além de seu trabalho no Brasil, Zilda Arns expandiu a atuação da Pastoral da Criança para outros países, levando sua expertise e abordagem para áreas onde a saúde infantil estava em situação precária.
+          </p>
+          Zilda Arns foi uma defensora incansável dos direitos das crianças e da importância de investir na saúde pública. Seu trabalho exemplar e dedicado na área da saúde pública continua a inspirar profissionais e voluntários a buscar soluções eficazes para melhorar a qualidade de vida das crianças e das famílias mais vulneráveis.
+        </p>
+    </article>
+
+    <article> 
+        <h2 id="pastoral">Zilda e a Pastoral da Criança</h2>
+        <p class="conteudo-descricao">Zilda Arns foi a fundadora da Pastoral da Criança, uma organização sem fins lucrativos voltada para a promoção da saúde e do desenvolvimento infantil. A pastoral foi criada em 1983, como uma iniciativa da Conferência Nacional dos Bispos do Brasil (CNBB), ligada à Igreja Católica.
+
+          <p>A inspiração de Zilda Arns para fundar a Pastoral da Criança veio de sua experiência como médica pediatra e de sua preocupação com a saúde das crianças em situação de vulnerabilidade social. Ela reconhecia que a pobreza, a desnutrição e a falta de acesso a serviços básicos de saúde eram fatores que contribuíam para altas taxas de mortalidade infantil.
+          </p>
+          <p>A abordagem da Pastoral da Criança se baseia na capacitação de voluntários locais para atuarem como agentes de saúde nas comunidades. Esses voluntários são treinados para realizar visitas domiciliares, monitorar o crescimento e desenvolvimento das crianças, orientar as famílias sobre práticas de saúde e nutrição adequadas, além de identificar e encaminhar casos que necessitem de atenção médica especializada.
+          </p>
+          <p>Um dos pilares da atuação da Pastoral da Criança é a valorização da participação comunitária. A organização incentiva o envolvimento ativo das comunidades nas ações de saúde, buscando fortalecer os laços sociais e promover a solidariedade entre as famílias.
+          </p>
+          <a href="https://www.pastoraldacrianca.org.br/"><img src="/imagem/logo-pastoral-da-crianca-2.png" class="logo-pastoral"></a>
+          <p>A Pastoral da Criança tem uma abordagem inclusiva, atuando em áreas urbanas e rurais, alcançando famílias de diversas religiões e culturas. A organização expandiu suas atividades para além das fronteiras do Brasil, estendendo sua atuação para outros países da América Latina, África e Ásia.
+          </p>
+          Graças ao trabalho incansável de Zilda Arns e dos voluntários da Pastoral da Criança, muitas vidas foram salvas e a qualidade de vida de crianças e famílias em situação de vulnerabilidade foi significativamente melhorada. A abordagem comunitária e o foco na prevenção e promoção da saúde tornaram a Pastoral da Criança um exemplo inspirador de atuação na área da saúde infantil e do cuidado com as famílias mais necessitadas
+        </p>
+    </article>
+
+    <article>
+        <h2 id="tecnologia">Zilda e a Tecnologia</h2>
+        <p class="conteudo-descricao">Embora Zilda Arns seja mais conhecida por seu trabalho na área da saúde e do desenvolvimento infantil, sua contribuição para a tecnologia também é relevante. Ela reconheceu a importância de utilizar ferramentas tecnológicas para apoiar o trabalho da Pastoral da Criança e melhorar a eficiência e a qualidade dos serviços prestados.
+
+          <p>Uma das iniciativas tecnológicas implementadas pela Pastoral da Criança sob a liderança de Zilda Arns foi o desenvolvimento de sistemas de informação e registro. Esses sistemas permitiam aos voluntários registrar e acompanhar o crescimento e desenvolvimento das crianças, assim como monitorar indicadores de saúde e nutrição. Esses dados eram essenciais para identificar áreas de intervenção prioritárias e avaliar o impacto das ações realizadas.
+          </p>
+          <p>Além disso, Zilda Arns também reconheceu o potencial da tecnologia para melhorar a comunicação e a troca de informações. Ela incentivou o uso de telefones celulares e outros dispositivos de comunicação para facilitar a comunicação entre os voluntários, possibilitando o compartilhamento de conhecimentos e a coordenação das atividades de forma mais eficiente.
+          </p>
+          <p>A visão de Zilda Arns em relação à tecnologia foi de utilizá-la como uma ferramenta para fortalecer o trabalho da Pastoral da Criança e ampliar seu alcance, sem nunca perder de vista o aspecto humano e a importância do contato direto com as famílias e comunidades atendidas.
+          </p>
+          Embora sua contribuição para a tecnologia não tenha sido tão amplamente divulgada quanto sua atuação na área da saúde, Zilda Arns demonstrou uma abordagem inovadora ao reconhecer e aproveitar as oportunidades oferecidas pela tecnologia para aprimorar os serviços e o impacto social da Pastoral da Criança.
+        </p>
+    </article>
+
+    <blockquote> 
+      <p>"Dra. Zilda Arns Neumann, sempre foi aberta às inovações de seu tempo. Em tudo ficou atenta e sempre foi adepta das tecnologias que poderiam ajudar as bases. Ela dava muita importância  ao uso de computadores, tanto é que a Pastoral da Criança teve computador antes mesmo da CNBB, para poder avaliar sua ação, especialmente  através das Folhas de Acompanhamentos das Ações Básicas (FABS)."</p><br>
+      <p>Ir. Veroni Teresinha de Medeiros</p>
+    </blockquote>    
+
+    <article class="conteudo-descricao">
+        <h2 id="saiba-mais">Saiba Mais</h2>
+        <p>
+          <a href="https://www.pastoraldacrianca.org.br/a-vida-e-obra-da-dra-zilda-arns-neumann" target="_blank">Vida e Obra de Zilda Arns</a>
+        </p>
+        <p><a href="http://www.ccs.saude.gov.br/cns/zilda-arns.php" target="_blank">Zilda Arns: a humanista incansável</a>
+        </p>
+        <p><a href="https://www12.senado.leg.br/noticias/materias/2023/03/14/comissao-de-educacao-confirma-zilda-arns-como-nova-heroina-da-patria" target="_blank">Comissão de Educação confirma Zilda Arns como nova heroína da pátria</a></p>
+        <p><a href="https://www.youtube.com/watch?v=oDaRyT4XG9U" target="_blank">Roda Viva - Zilda Arns</a>
+        </p>
+        <p><a href="https://www.youtube.com/watch?v=0yqbe8v-PQY" target="_blank">Fantástico - Zilda Arns</a>
+        </p>
+    </article>
+</section>
+</main>
+
+<footer class="footer">
+    <span class="footer-texto">
+        <p>Feito por Andrezza Fernandes</p>
+        <p>Graduada em Letras pela Universidade Federal Rural de Pernambuco e estudante no Curso Superior de Tecnologia da Informação da Universidade Federal do Mato Grosso do Sul.</p></span>
+        <p class="social"><a href="https://www.linkedin.com/in/andrezza-fernandes-baab67169/" target="_blank"><img src="/imagem/80784_linkedin-logo-white-png.png" class="icon"> Andrezza Fernandes</a>
+        </p>
+</footer>
+</body>
+</html>
